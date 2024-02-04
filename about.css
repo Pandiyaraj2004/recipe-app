@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+  
+    background-image: url("https://img.freepik.com/free-photo/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai_188544-13382.jpg?w=826&t=st=1706979804~exp=1706980404~hmac=8b8cdd780a9d063ce2bdf4fd052d8621e1634292a2327c27cd6c60f2965891d2");
+    min-height:100vh;
+    background-size: cover;
+    background-position: center;
+    color: rgb(6, 216, 118);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.about {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.about h2, .about h3 {
+    color: #333;
+}
+
+.about ol, .about ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

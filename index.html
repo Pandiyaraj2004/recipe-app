@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe Finder</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">         
+        <img src="logo.jpg">
+    </div>
+        <input type="checkbox" id="check">
+        
+    <lable for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="colse-icon"></i>
+    </lable>
+    <nav class="navbar">
+        <a href="#home" style="--i:0;" >Home</a>
+        <a href="fn.html" style="--i:1;">Find Recipie By Name</a>
+        <a href="#Find Nutrition" style="--i:2;">Find Nutrition</a>
+        <a href="about.html" style="--i:3;">About</a>
+    </nav>
+    </header>
+
+
+    
+    <div class="main">
+        <h1>Image To Food Recipe Finder</h1>
+        <form>
+
+            <label for="file-upload">Choose a food image:</label>
+    
+            <input type="file" id="file-upload" accept="image/*" />
+        
+            <button type="button" onclick="uploadFile()">Upload</button>
+        
+            <button type="button" onclick="uploadImage()">predict</button>
+
+         </form>
+
+         <div id="image-container">
+
+            <img id="predicted-image" src="" alt="">
+            <p id="predicted-image-link">Predicted Image link: </p>
+
+         </div>
+        <div id="image-preview"></div>
+        
+        <div>
+           <p id="">results:</p>
+        </div>
+        
+        <div class="recipe-result">
+            <ul id="results"></ul>
+        </div>
+    </div>
+    <script src="./food.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
